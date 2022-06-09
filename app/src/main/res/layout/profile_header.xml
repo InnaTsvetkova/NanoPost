@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/profile_circle_diameter"
+            android:layout_height="@dimen/profile_circle_diameter"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            tools:background="@color/md_theme_dark_outline" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/header"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subhead"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/displayName"
+            app:layout_constraintStart_toStartOf="@+id/displayName"
+            app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/dividerTop"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            app:dividerColor="?attr/colorSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bio" />
+
+
+        <TextView
+            android:id="@+id/imagesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/images_number"
+            app:layout_constraintBottom_toBottomOf="@+id/subscribersCount"
+            app:layout_constraintEnd_toStartOf="@+id/subscribersCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/subscribersCount" />
+
+        <TextView
+            android:id="@+id/images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/images"
+            app:layout_constraintEnd_toEndOf="@+id/imagesCount"
+            app:layout_constraintStart_toStartOf="@+id/imagesCount"
+            app:layout_constraintTop_toBottomOf="@+id/imagesCount" />
+
+        <TextView
+            android:id="@+id/subscribersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/subscribers_number"
+            app:layout_constraintEnd_toStartOf="@+id/postsCount"
+            app:layout_constraintStart_toEndOf="@+id/imagesCount"
+            app:layout_constraintTop_toBottomOf="@+id/dividerTop" />
+
+        <TextView
+            android:id="@+id/subscribers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribers"
+            app:layout_constraintEnd_toEndOf="@+id/subscribersCount"
+            app:layout_constraintStart_toStartOf="@+id/subscribersCount"
+            app:layout_constraintTop_toBottomOf="@+id/subscribersCount" />
+
+        <TextView
+            android:id="@+id/postsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/posts_number"
+            app:layout_constraintBottom_toBottomOf="@+id/subscribersCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/subscribersCount"
+            app:layout_constraintTop_toTopOf="@+id/subscribersCount" />
+
+        <TextView
+            android:id="@+id/posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/posts"
+            app:layout_constraintEnd_toEndOf="@+id/postsCount"
+            app:layout_constraintStart_toStartOf="@+id/postsCount"
+            app:layout_constraintTop_toBottomOf="@+id/postsCount" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/dividerBottom"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            app:dividerColor="?attr/colorSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subscribers" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/subscribe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerBottom" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

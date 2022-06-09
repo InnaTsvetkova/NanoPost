@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">NanoPost</string>
+
+<!--    fragment auth-->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_continue">Continue</string>
+
+<!--    fragment create post-->
+    <string name="newPost">New post...</string>
+    <string name="addImage">Add image</string>
+    <string name="addText">Multiline text here...</string>
+
+<!--    fragment feed-->
+    <string name="feed">Feed</string>
+
+    <string name="titleImages">Images</string>
+
+<!--    item post-->
+    <string name="header">Header</string>
+    <string name="subhead">Subhead</string>
+    <string name="dateCreated">dateCreated</string>
+    <string name="post_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</string>
+
+<!--    fragment profile-->
+    <string name="profile">Profile</string>
+
+<!--    profile header-->
+    <string name="images_number">12</string>
+    <string name="images">images</string>
+    <string name="subscribers_number">5</string>
+    <string name="subscribers">subscribers</string>
+    <string name="posts_number">16</string>
+    <string name="posts">posts</string>
+    <string name="subscribe">Subscribe</string>
+
+<!--    profile images-->
+    <string name="profileImages">Images</string>
+    
+<!--    fragment post-->
+    <string name="post">Post</string>
+
+    <string name="error_min">имя пользователя короче 3 символов</string>
+    <string name="error_max">имя пользователя длиннее 16 символов</string>
+    <string name="error_invalid">неподдерживаемые символы (разрешены a-z,_, .)</string>
+
+    <string name="delete">Удалить</string>
+
+</resources>

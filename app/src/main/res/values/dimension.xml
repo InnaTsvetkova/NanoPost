@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    activity main-->
+    <dimen name="margin_end_fab">16dp</dimen>
+    <dimen name="margin_bottom_fab">16dp</dimen>
+    <dimen name="bottom_navigation_height">80dp</dimen>
+
+<!--    feed fragment-->
+
+    <dimen name="post_header_size">14sp</dimen>
+
+<!--    profile header-->
+    <dimen name="profile_circle_diameter">64dp</dimen>
+    <dimen name="profile_header_size">22sp</dimen>
+
+<!--Fragment Images-->
+    <dimen name="bottomNavigation">108dp</dimen>
+
+
+    <dimen name="avatar_diameter">40dp</dimen>
+</resources>
